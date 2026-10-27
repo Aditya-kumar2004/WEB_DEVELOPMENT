@@ -1,0 +1,145 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Universal Reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+/* Body Styling */
+body {
+font-family: 'Poppins', sans-serif;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background: linear-gradient(135deg, #6bf466, #eed048);
+padding: 20px;
+}
+
+/* Main Heading */
+h1 {
+color: #ffffff;
+font-size: 32px;
+font-weight: 700;
+margin-bottom: 25px;
+text-align: center;
+letter-spacing: 0.5px;
+}
+
+/* Input Field */
+#itemInput {
+width: 320px;
+max-width: 100%;
+padding: 14px 16px;
+font-size: 15px;
+font-family: inherit;
+color: #1f2937;
+background-color: #ffffff;
+border: 2px solid transparent;
+border-radius: 10px;
+outline: none;
+transition: all 0.3s ease;
+margin-bottom: 15px;
+}
+
+/* Input Focus Effect */
+#itemInput:focus {
+border-color: #a5b4fc;
+box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+}
+
+/* Add Button */
+#addBtn {
+padding: 13px 28px;
+background: #ffffff;
+color: #5b4bb7;
+border: none;
+border-radius: 10px;
+font-family: inherit;
+font-size: 15px;
+font-weight: 600;
+cursor: pointer;
+transition: all 0.3s ease;
+margin-left: 8px;
+}
+
+/* Button Hover Effect */
+#addBtn:hover {
+background: #5b4bb7;
+color: #ffffff;
+transform: translateY(-2px);
+box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Click Effect */
+#addBtn:active {
+transform: scale(0.96);
+}
+
+/* List Container */
+#itemList {
+width: 420px;
+max-width: 100%;
+margin-top: 25px;
+list-style: none;
+}
+
+/* Individual List Items */
+#itemList li {
+background: #ffffff;
+color: #374151;
+padding: 15px 18px;
+margin-bottom: 12px;
+border-radius: 10px;
+font-size: 15px;
+font-weight: 500;
+display: flex;
+align-items: center;
+overflow-wrap: anywhere;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* List Item Hover Effect */
+#itemList li:hover {
+transform: translateY(-3px);
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+/* Decorative Bullet */
+#itemList li::before {
+content: "✓";
+color: #667eea;
+font-weight: 700;
+font-size: 18px;
+margin-right: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+h1 {
+font-size: 25px;
+}
+
+
+#itemInput {
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+#addBtn {
+    width: 100%;
+    margin-left: 0;
+}
+
+#itemList {
+    width: 100%;
+}
+
+
+}

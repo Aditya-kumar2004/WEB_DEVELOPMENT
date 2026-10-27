@@ -1,19 +1,13 @@
-// Select the input field and the button
-const passwordField = document.getElementById('passwordField');
-const toggleBtn = document.getElementById('toggleBtn');
+const password1 = document.getElementById('passwordID');
+const toggle = document.getElementById('toggleBtnID');
 
-// Add a click event listener to the button
-toggleBtn.addEventListener('click', function () {
-    // Check the current type of the input field
-    if (passwordField.type === 'password') {
-        // Change type to text to reveal the password
-        passwordField.type = 'text';
-        // Optional: Update the button text
-        toggleBtn.textContent = 'Hide password';
-    } else {
-        // Change type back to password to hide it
-        passwordField.type = 'password';
-        // Optional: Reset the button text
-        toggleBtn.textContent = 'Show password';
+toggle.addEventListener('click',()=>{
+    if(password1.type === 'password'){
+        password1.type = 'text';
+        toggle.textContent = "Hide Password"
+    }else{
+        password1.type = 'password';
+        toggle.textContent = "Show Password"
+
     }
-});
+})
