@@ -1,0 +1,36 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.gallery {
+    width: 400px;
+    margin: 20px auto;
+}
+
+#mainDisplay {
+    width: 100%;
+    height: 250px;
+    background-color: lightgray;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 70px;
+    height: 60px;
+    border: 2px solid #333;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.thumbnail:hover {
+    opacity: 0.5;
+}

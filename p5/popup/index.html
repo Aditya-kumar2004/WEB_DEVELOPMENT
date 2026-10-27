@@ -1,0 +1,27 @@
+<!DOCTYPEDOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Moved style link to the head where it belongs structurally -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <h1>MOdel POPup</h1>
+    <!-- ADD THIS: A trigger button that is visible on page load -->
+    <button id="openModalBtn">Open Modal</button>
+
+    <!-- Modal Overlay and Content (Kept hidden initially) -->
+    <div id="modalOverlay" class="modal-overlay hidden">
+        <div class="modal-content">
+            <!-- Objective 1: Close button with aria-label -->
+            <button id="closeModalBtn" aria-label="Close modal">&times;</button>
+            <p>Modal Content Goes Here</p>
+        </div>
+    </div>
+
+    <!-- Script tag placed right before the closing body tag -->
+    <script src="index.js"></script>
+</body>
+</html>
